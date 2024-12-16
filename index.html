@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extensionary - A Directory for browser extensions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-section">
+      <a href="#home" class="logo-link">
+        <span class="logo-text">Extensionary</span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+  <nav class="nav-items">
+    <a href="#">About Us</a>
+    <a href="#browserdirectory">Explore</a>
+    <a href="#recentlyadded" class="trending-label">
+      Recently Added
+      <span class="new-badge">NEW</span>
+    </a>
+    <a href="/testimonials">Testimonials</a>
+    <a href="/contact">Submit</a>
+  </nav>
+
+  <!-- Desktop Button -->
+  <button class="suggest-btn desktop-suggest-btn">Contact Us</button>
+
+  <!-- Mobile Menu Button -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <nav class="mobile-nav-items">
+      <a href="/about">About Us</a>
+      <a href="#browserdirectory">Explore</a>
+      <a href="#recentlyadded" class="trending-label">
+        Recently Added
+        <span class="new-badge">NEW</span>
+      </a>
+      <a href="/testimonials">Testimonials</a>
+      <a href="/contact">Contact Us</a>
+      <button class="mobile-suggest-btn">Contact Us</button>
+    </nav>
+  </div>
+  </header>
+  <section class="hero-section">
+    <p class="subtitle">Introducing Extensionery</p>
+    <h1 class="main-heading">Simplify Your Workflow with<br> Powerful Extensions</h1>
+    <p class="description">Boost Your Browsing Experience with the Ultimate Extension Directory!</p>
+    <a href="#browserdirectory"><button class="cta-button">Dive In</button></a>
+  </section>
+
+  <section id="browserdirectory">
+    <div class="container">
+      <div class="extension">
+        <h1>Find the Right Tools for Every Task</h1>
+        <p>Enhance your workflow with curated browser tools tailored for every professional need.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-category="all">All</button>
+        <button class="tab" data-category="seo">SEO</button>
+        <button class="tab" data-category="design">Design</button>
+        <button class="tab" data-category="development">Development</button>
+        <button class="tab" data-category="content">Content Writing</button>
+        <button class="tab" data-category="productivity">Productivity</button>
+        <button class="tab" data-category="social">Social Media</button>
+        <button class="tab" data-category="security">Security</button>
+        <button class="tab" data-category="analytics">Analytics</button>
+        <button class="tab" data-category="communication">Communication</button>
+      </div>
+
+      <div class="mobile-dropdown">
+        <button class="dropdown-button">
+          <span class="selected-category">All Categories</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <div class="dropdown-item active" data-category="all">All</div>
+          <div class="dropdown-item" data-category="seo">SEO</div>
+          <div class="dropdown-item" data-category="design">Design</div>
+          <div class="dropdown-item" data-category="development">Development</div>
+          <div class="dropdown-item" data-category="content">Content Writing</div>
+          <div class="dropdown-item" data-category="productivity">Productivity</div>
+          <div class="dropdown-item" data-category="social">Social Media</div>
+          <div class="dropdown-item" data-category="security">Security</div>
+          <div class="dropdown-item" data-category="analytics">Analytics</div>
+          <div class="dropdown-item" data-category="communication">Communication</div>
+        </div>
+      </div>
+
+      <div class="cards" id="cardsGrid"></div>
+
+      <div class="pagination" id="pagination">
+        <button class="pagination-button" id="prevButton">Previous</button>
+        <span class="pagination-info" id="pageInfo">Page 1 of 1</span>
+        <button class="pagination-button" id="nextButton">Next</button>
+      </div>
+    </div>
+  </section>
+  <section id="recentlyadded">
+    <section id="recentlyAdded" class="recently-added">
+      <div class="container">
+        <h2>Recently Added</h2>
+        <ul id="recentList" class="recent-list">
+          <!-- Recent items will be populated here -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+          <h2>Testimonials</h2>
+          <div class="testimonials-slider">
+              <div class="testimonials-track">
+                  <div class="testimonial-card">
+                      <div class="user-info">
+                          <img src="/api/placeholder/40/40" alt="User" class="user-avatar">
+                          <div class="user-details">
+                              <h4>Jerome Bell</h4>
+                              <p>@jerome_bell</p>
+                          </div>
+                      </div>
+                      <p class="testimonial-text">I used the services for family law matters. The lawyers were very smooth, professional and effective. They helped me through difficult times and achieve the results I wanted.</p>
+                  </div>
+  
+                  <div class="testimonial-card">
+                      <div class="user-info">
+                          <img src="/api/placeholder/40/40" alt="User" class="user-avatar">
+                          <div class="user-details">
+                              <h4>Guy Hawkins</h4>
+                              <p>@guyhawkins</p>
+                          </div>
+                      </div>
+                      <p class="testimonial-text">I am grateful for their commitment and professionalism. They helped me with a difficult inheritance case and I felt I was dealing with experts right from the start.</p>
+                  </div>
+  
+                  <!-- Add more testimonial cards as needed -->
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Extensionary</h3>
+            <p>Discover and manage powerful browser extensions to enhance your browsing experience.</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Extensionary. All rights reserved.</p>
+        <p class="developer-credit">Developed with <i class="fas fa-heart"></i> by <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">Muhammed</a></p>
+    </div>
+</footer>
+
+<button id="scrollToTop" class="scroll-top-btn">
+  <i class="fas fa-arrow-up"></i>
+</button>   
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
